@@ -10,8 +10,6 @@ import {
   EthereumIcon, 
   ArbitrumIcon, 
   OptimismIcon, 
-  BaseIcon, 
-  PolygonIcon, 
   AvalancheIcon, 
   ChainlinkIcon 
 } from '@/components/icons/chain-icons'
@@ -92,12 +90,8 @@ export function HeroSection() {
                                             <span className="text-sm font-medium text-gray-700">Optimism</span>
                                         </div>
                                         <div className="flex flex-col items-center space-y-2 p-4 bg-white/80 rounded-xl shadow-sm">
-                                            <BaseIcon className="w-12 h-12" />
-                                            <span className="text-sm font-medium text-gray-700">Base</span>
-                                        </div>
-                                        <div className="flex flex-col items-center space-y-2 p-4 bg-white/80 rounded-xl shadow-sm">
-                                            <PolygonIcon className="w-12 h-12" />
-                                            <span className="text-sm font-medium text-gray-700">Polygon</span>
+                                            <ChainlinkIcon className="w-12 h-12" />
+                                            <span className="text-sm font-medium text-gray-700">Chainlink</span>
                                         </div>
                                         <div className="flex flex-col items-center space-y-2 p-4 bg-white/80 rounded-xl shadow-sm">
                                             <AvalancheIcon className="w-12 h-12" />
@@ -136,14 +130,7 @@ export function HeroSection() {
                                         <OptimismIcon className="h-8 w-8" />
                                         <span className="ml-3 text-lg font-semibold text-gray-700">Optimism</span>
                                     </div>
-                                    <div className="flex items-center">
-                                        <BaseIcon className="h-8 w-8" />
-                                        <span className="ml-3 text-lg font-semibold text-gray-700">Base</span>
-                                    </div>
-                                    <div className="flex items-center">
-                                        <PolygonIcon className="h-8 w-8" />
-                                        <span className="ml-3 text-lg font-semibold text-gray-700">Polygon</span>
-                                    </div>
+
                                     <div className="flex items-center">
                                         <AvalancheIcon className="h-8 w-8" />
                                         <span className="ml-3 text-lg font-semibold text-gray-700">Avalanche</span>
