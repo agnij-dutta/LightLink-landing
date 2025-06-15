@@ -1,0 +1,50 @@
+<svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lightlink-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="50%" style="stop-color:#A855F7"/>
+      <stop offset="100%" style="stop-color:#7C3AED"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Top water drop -->
+  <path 
+    d="M50 5 
+       C45 5, 35 15, 35 25
+       C35 35, 45 45, 50 45
+       C55 45, 65 35, 65 25
+       C65 15, 55 5, 50 5 Z" 
+    fill="url(#lightlink-gradient)"
+  />
+  
+  <!-- Bottom water drop -->
+  <path 
+    d="M50 75
+       C45 75, 35 85, 35 95
+       C35 105, 45 115, 50 115
+       C55 115, 65 105, 65 95
+       C65 85, 55 75, 50 75 Z" 
+    fill="url(#lightlink-gradient)"
+  />
+  
+  <!-- Interlinking circle -->
+  <circle 
+    cx="50" 
+    cy="60" 
+    r="18" 
+    fill="none" 
+    stroke="url(#lightlink-gradient)" 
+    stroke-width="6"
+  />
+  
+  <!-- Inner connecting element -->
+  <path 
+    d="M50 42
+       C58 42, 65 49, 65 57
+       C65 65, 58 72, 50 72
+       C42 72, 35 65, 35 57
+       C35 49, 42 42, 50 42 Z" 
+    fill="url(#lightlink-gradient)"
+    opacity="0.8"
+  />
+</svg> 
