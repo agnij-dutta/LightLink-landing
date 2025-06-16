@@ -160,6 +160,7 @@ const menuItems = [
     { name: 'Features', href: '#features' },
     { name: 'How it Works', href: '#how-it-works' },
     { name: 'Demo', href: '#demo' },
+    { name: 'Lightpaper', href: '/lightpaper' },
     { name: 'Docs', href: '#docs' },
 ]
 

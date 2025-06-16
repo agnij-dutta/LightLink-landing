@@ -101,6 +101,7 @@ const menuItems = [
     { name: 'Features', href: '#features' },
     { name: 'How it Works', href: '#how-it-works' },
     { name: 'Demo', href: '#demo' },
+    { name: 'Lightpaper', href: '/lightpaper' },
     { name: 'About', href: '#about' },
 ]
 
@@ -174,12 +175,21 @@ const HeroHeader = () => {
                                 <ul className="flex gap-8 text-sm">
                                     {menuItems.map((item, index) => (
                                         <li key={index}>
-                                            <button
-                                                onClick={() => scrollToSection(item.href)}
-                                                className="text-gray-300 hover:text-white block duration-150 relative group">
-                                                <span>{item.name}</span>
-                                                <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-300 group-hover:w-full"></div>
-                                            </button>
+                                            {item.href.startsWith('/') ? (
+                                                <Link
+                                                    href={item.href}
+                                                    className="text-gray-300 hover:text-white block duration-150 relative group">
+                                                    <span>{item.name}</span>
+                                                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-300 group-hover:w-full"></div>
+                                                </Link>
+                                            ) : (
+                                                <button
+                                                    onClick={() => scrollToSection(item.href)}
+                                                    className="text-gray-300 hover:text-white block duration-150 relative group">
+                                                    <span>{item.name}</span>
+                                                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-300 group-hover:w-full"></div>
+                                                </button>
+                                            )}
                                         </li>
                                     ))}
                                 </ul>
@@ -191,11 +201,19 @@ const HeroHeader = () => {
                                 <ul className="space-y-6 text-base">
                                     {menuItems.map((item, index) => (
                                         <li key={index}>
-                                            <button
-                                                onClick={() => scrollToSection(item.href)}
-                                                className="text-gray-300 hover:text-white block duration-150">
-                                                <span>{item.name}</span>
-                                            </button>
+                                            {item.href.startsWith('/') ? (
+                                                <Link
+                                                    href={item.href}
+                                                    className="text-gray-300 hover:text-white block duration-150">
+                                                    <span>{item.name}</span>
+                                                </Link>
+                                            ) : (
+                                                <button
+                                                    onClick={() => scrollToSection(item.href)}
+                                                    className="text-gray-300 hover:text-white block duration-150">
+                                                    <span>{item.name}</span>
+                                                </button>
+                                            )}
                                         </li>
                                     ))}
                                 </ul>
