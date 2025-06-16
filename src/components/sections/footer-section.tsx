@@ -15,7 +15,7 @@ const footerLinks = {
     { name: 'Documentation', href: '#docs' },
     { name: 'API Reference', href: '#api' },
     { name: 'SDKs', href: '#sdks' },
-    { name: 'GitHub', href: 'https://github.com/lightlink-network' },
+    { name: 'GitHub', href: 'https://github.com/agnij-dutta/LightLink', icon: Github },
   ],
   company: [
     { name: 'About', href: '#about' },
@@ -32,10 +32,10 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/lightlink-network', icon: Github },
-  { name: 'Twitter', href: 'https://twitter.com/lightlink', icon: Twitter },
+  { name: 'GitHub', href: 'https://github.com/agnij-dutta/LightLink', icon: Github },
   { name: 'LinkedIn', href: 'https://linkedin.com/company/lightlink', icon: Linkedin },
   { name: 'Email', href: 'mailto:hello@lightlink.network', icon: Mail },
+  { name: 'Twitter', href: 'https://twitter.com/lightlink', icon: Twitter },
 ]
 
 export function FooterSection() {

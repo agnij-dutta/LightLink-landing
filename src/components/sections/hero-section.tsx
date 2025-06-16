@@ -49,7 +49,7 @@ export function HeroSection() {
                                         size="lg"
                                         variant="outline"
                                         className="px-8 text-base border-gray-300 hover:bg-gray-50">
-                                        <Link href="https://github.com/lightlink-network" target="_blank">
+                                        <Link href="https://github.com/agnij-dutta/LightLink" target="_blank">
                                             <Github className="mr-2 h-4 w-4" />
                                             <span className="text-nowrap">View on GitHub</span>
                                             <ExternalLink className="ml-2 h-4 w-4" />

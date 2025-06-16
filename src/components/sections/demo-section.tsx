@@ -38,7 +38,7 @@ export function DemoSection() {
                   Launch Demo
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-gray-600 text-white hover:bg-gray-800">
-                  <Link href="https://github.com/lightlink-network" target="_blank">
+                                              <Link href="https://github.com/agnij-dutta/LightLink" target="_blank">
                     <Github className="mr-2 h-4 w-4" />
                     View Source
                     <ExternalLink className="ml-2 h-4 w-4" />
