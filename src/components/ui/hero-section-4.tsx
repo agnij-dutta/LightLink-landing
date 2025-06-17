@@ -183,12 +183,12 @@ const HeroHeader = () => {
                                                     <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-300 group-hover:w-full"></div>
                                                 </Link>
                                             ) : (
-                                                <button
-                                                    onClick={() => scrollToSection(item.href)}
-                                                    className="text-gray-300 hover:text-white block duration-150 relative group">
-                                                    <span>{item.name}</span>
-                                                    <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-300 group-hover:w-full"></div>
-                                                </button>
+                                            <button
+                                                onClick={() => scrollToSection(item.href)}
+                                                className="text-gray-300 hover:text-white block duration-150 relative group">
+                                                <span>{item.name}</span>
+                                                <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-300 group-hover:w-full"></div>
+                                            </button>
                                             )}
                                         </li>
                                     ))}
@@ -208,11 +208,11 @@ const HeroHeader = () => {
                                                     <span>{item.name}</span>
                                                 </Link>
                                             ) : (
-                                                <button
-                                                    onClick={() => scrollToSection(item.href)}
-                                                    className="text-gray-300 hover:text-white block duration-150">
-                                                    <span>{item.name}</span>
-                                                </button>
+                                            <button
+                                                onClick={() => scrollToSection(item.href)}
+                                                className="text-gray-300 hover:text-white block duration-150">
+                                                <span>{item.name}</span>
+                                            </button>
                                             )}
                                         </li>
                                     ))}

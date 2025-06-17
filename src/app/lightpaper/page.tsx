@@ -61,7 +61,7 @@ function LightpaperHeader() {
     <header>
       <nav
         data-state={menuState && 'active'}
-        className={`group fixed z-50 w-full transition-all duration-500 ease-in-out ${
+        className={`group fixed z-[100] w-full transition-all duration-500 ease-in-out ${
           isVisible ? 'translate-y-0' : '-translate-y-full'
         } ${
           isScrolled 
@@ -116,7 +116,7 @@ function LightpaperHeader() {
               </div>
             </div>
 
-            <div className="bg-black group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-gray-700 p-6 shadow-2xl md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none">
+            <div className="bg-black group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border border-gray-700 p-6 shadow-2xl md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none z-[110]">
               <div className="lg:hidden">
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
@@ -169,7 +169,7 @@ export default function LightpaperPage() {
   return (
     <div className="min-h-screen bg-black">
       <LightpaperHeader />
-      <div style={{ paddingTop: '80px' }}>
+      <div className="pt-16 lg:pt-20">
         <LightpaperContent />
       </div>
       <FooterSection />

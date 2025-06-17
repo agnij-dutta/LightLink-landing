@@ -933,21 +933,41 @@ We invite developers, researchers, and institutions to join us in building this 
 export function LightpaperContent() {
   const [activeSection, setActiveSection] = useState<string>('abstract')
   const [currentSection, setCurrentSection] = useState<Section | null>(HARDCODED_SECTIONS[0])
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   const handleSectionClick = (sectionId: string) => {
     const section = HARDCODED_SECTIONS.find(s => s.id === sectionId)
     if (section) {
       setCurrentSection(section)
       setActiveSection(sectionId)
+      // Close sidebar on mobile after selection
+      setSidebarOpen(false)
     }
+  }
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen)
   }
 
   return (
     <div className="min-h-screen bg-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex gap-8">
-          {/* Navigation Sidebar */}
-          <div className="w-80 flex-shrink-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-8">
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden mb-4">
+          <button
+            onClick={toggleSidebar}
+            className="flex items-center space-x-2 px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 hover:bg-gray-700 transition-colors"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <span className="text-sm font-medium">Table of Contents</span>
+          </button>
+        </div>
+
+        <div className="flex gap-4 lg:gap-8 relative">
+          {/* Navigation Sidebar - Desktop */}
+          <div className="hidden lg:block w-80 flex-shrink-0 sticky top-24 h-fit">
             <LightpaperNavigation 
               sections={HARDCODED_SECTIONS} 
               activeSection={activeSection}
@@ -955,10 +975,43 @@ export function LightpaperContent() {
             />
           </div>
 
+          {/* Navigation Sidebar - Mobile Overlay */}
+          {sidebarOpen && (
+            <>
+              {/* Backdrop */}
+              <div 
+                className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+                onClick={() => setSidebarOpen(false)}
+              />
+              
+              {/* Sidebar */}
+              <div className="lg:hidden fixed left-0 top-0 h-full w-80 max-w-[85vw] bg-gray-900 border-r border-gray-700 z-50 overflow-y-auto">
+                <div className="p-4">
+                  <div className="flex items-center justify-between mb-6">
+                    <h2 className="text-lg font-bold text-white">Table of Contents</h2>
+                    <button
+                      onClick={() => setSidebarOpen(false)}
+                      className="p-2 text-gray-400 hover:text-white transition-colors"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <LightpaperNavigation 
+                    sections={HARDCODED_SECTIONS} 
+                    activeSection={activeSection}
+                    onSectionClick={handleSectionClick}
+                  />
+                </div>
+              </div>
+            </>
+          )}
+
           {/* Main Content */}
-          <div className="flex-1 min-w-0 ml-8">
+          <div className="flex-1 min-w-0">
             <div className="bg-gray-900 rounded-lg shadow-sm border border-gray-700">
-              <div className="p-8 lg:p-12 overflow-hidden">
+              <div className="p-4 sm:p-6 lg:p-8 xl:p-12">
                 {currentSection && (
                   <LightpaperSection 
                     section={currentSection}
