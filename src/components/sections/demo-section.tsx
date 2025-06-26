@@ -33,9 +33,11 @@ export function DemoSection() {
                 trustless verification across networks in real-time.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  <Play className="mr-2 h-4 w-4" />
-                  Launch Demo
+                <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700" asChild>
+                  <Link href="https://applightlink.vercel.app/">
+                    <Play className="mr-2 h-4 w-4" />
+                    Launch Demo
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-gray-600 text-white hover:bg-gray-800">
                                               <Link href="https://github.com/agnij-dutta/LightLink" target="_blank">

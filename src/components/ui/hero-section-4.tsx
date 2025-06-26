@@ -30,20 +30,20 @@ export function HeroSection() {
                                         asChild
                                         size="lg"
                                         className="px-5 text-base bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                                        <Link href="#demo">
+                                        <Link href="https://applightlink.vercel.app/">
                                             <span className="text-nowrap">Start Building</span>
                                         </Link>
                                     </Button>
-                                    <Button
+                                    {/* <Button
                                         key={2}
                                         asChild
                                         size="lg"
                                         variant="ghost"
                                         className="px-5 text-base text-white hover:bg-white/10">
-                                        <Link href="#demo">
+                                        <Link href="https://applightlink.vercel.app/">
                                             <span className="text-nowrap">Request a demo</span>
                                         </Link>
-                                    </Button>
+                                    </Button> */}
                                 </div>
                             </div>
                             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -221,19 +221,10 @@ const HeroHeader = () => {
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 <Button
                                     asChild
-                                    variant="outline"
-                                    size="sm"
-                                    className="border-gray-600 text-white hover:bg-gray-800">
-                                    <Link href="#">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
                                     size="sm"
                                     className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                                    <Link href="#">
-                                        <span>Sign Up</span>
+                                    <Link href="https://applightlink.vercel.app/">
+                                        <span>Launch App</span>
                                     </Link>
                                 </Button>
                             </div>

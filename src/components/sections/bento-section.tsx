@@ -9,7 +9,7 @@ const features = [
     Icon: TrendingUp,
     name: "95% Cost Reduction",
     description: "Dramatically reduce gas costs through intelligent proof aggregation",
-    href: "#",
+    href: "https://applightlink.vercel.app/",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -22,7 +22,7 @@ const features = [
     Icon: Shield,
     name: "Trustless Security",
     description: "Zero-knowledge proofs ensure complete security without trust assumptions",
-    href: "#",
+    href: "https://applightlink.vercel.app/",
     cta: "Explore",
     className: "col-span-3 lg:col-span-2",
     background: (
@@ -35,7 +35,7 @@ const features = [
     Icon: Globe,
     name: "Multi-Chain Network",
     description: "Connect and verify across 5+ major blockchain networks seamlessly",
-    href: "#",
+    href: "https://applightlink.vercel.app/",
     cta: "View networks",
     className: "col-span-3 lg:col-span-2",
     background: (
@@ -56,7 +56,7 @@ const features = [
     Icon: Zap,
     name: "Lightning Fast",
     description: "Process thousands of proofs in seconds with recursive zk-SNARKs",
-    href: "#",
+    href: "https://applightlink.vercel.app/",
     cta: "See benchmarks",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -69,7 +69,7 @@ const features = [
     Icon: ChainlinkIcon,
     name: "Chainlink Powered",
     description: "Built on Chainlink's decentralized infrastructure for maximum reliability",
-    href: "#",
+    href: "https://applightlink.vercel.app/",
     cta: "Integration details",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -82,7 +82,7 @@ const features = [
     Icon: Code,
     name: "Developer Ready",
     description: "Comprehensive APIs, SDKs, and documentation for easy integration",
-    href: "#",
+    href: "https://applightlink.vercel.app/",
     cta: "Start building",
     className: "col-span-3 lg:col-span-2",
     background: (

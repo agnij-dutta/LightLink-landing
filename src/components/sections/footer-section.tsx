@@ -6,28 +6,28 @@ import { LightLinkLogo } from '@/components/icons/chain-icons'
 
 const footerLinks = {
   product: [
-    { name: 'Features', href: '#features' },
-    { name: 'How it Works', href: '#how-it-works' },
-    { name: 'Demo', href: '#demo' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'Features', href: 'https://applightlink.vercel.app/' },
+    { name: 'How it Works', href: 'https://applightlink.vercel.app/' },
+    { name: 'Demo', href: 'https://applightlink.vercel.app/' },
+    { name: 'Pricing', href: 'https://applightlink.vercel.app/' },
   ],
   developers: [
-    { name: 'Documentation', href: '#docs' },
-    { name: 'API Reference', href: '#api' },
-    { name: 'SDKs', href: '#sdks' },
+    { name: 'Documentation', href: 'https://applightlink.vercel.app/' },
+    { name: 'API Reference', href: 'https://applightlink.vercel.app/' },
+    { name: 'SDKs', href: 'https://applightlink.vercel.app/' },
     { name: 'GitHub', href: 'https://github.com/agnij-dutta/LightLink', icon: Github },
   ],
   company: [
-    { name: 'About', href: '#about' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Careers', href: '#careers' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: 'https://applightlink.vercel.app/' },
+    { name: 'Blog', href: 'https://applightlink.vercel.app/' },
+    { name: 'Careers', href: 'https://applightlink.vercel.app/' },
+    { name: 'Contact', href: 'https://applightlink.vercel.app/' },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '#privacy' },
-    { name: 'Terms of Service', href: '#terms' },
-    { name: 'Cookie Policy', href: '#cookies' },
-    { name: 'Security', href: '#security' },
+    { name: 'Privacy Policy', href: 'https://applightlink.vercel.app/' },
+    { name: 'Terms of Service', href: 'https://applightlink.vercel.app/' },
+    { name: 'Cookie Policy', href: 'https://applightlink.vercel.app/' },
+    { name: 'Security', href: 'https://applightlink.vercel.app/' },
   ],
 }
 
